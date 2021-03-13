@@ -1,12 +1,18 @@
 
+# Pysys Test Templates
 
-PySys
+This project provides a bunch of code templates / samples for 
+pysys tests. The goal is to have a simple demo for every pysys feature.
 
-https://github.com/pysys-test/pysys-test
+## Links
 
-The BaseTest Class
+- PySys
 
-https://pysys-test.github.io/pysys-test/BaseTest.html
+    https://github.com/pysys-test/pysys-test
 
+- The BaseTest Class
 
+    https://pysys-test.github.io/pysys-test/BaseTest.html
+
+pysys.py run -v DEBUG 007_AnotherProcess/
 

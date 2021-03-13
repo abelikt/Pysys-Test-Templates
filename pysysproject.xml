@@ -16,6 +16,10 @@
 	<test-plugin   classname="myorg.plugins.MyTestPlugin" alias="myorg"/>
 	<runner-plugin classname="myorg.plugins.MyRunnerPlugin" alias="myorg"/>
 	-->
+
+	<test-plugin classname="myorg.mytestplugin.MyTestPlugin" alias="thetestplugin">
+	</test-plugin>
+
 	<pythonpath value="./pysys-extensions" />
    	<runner-plugin classname="myorg.arunnerplugin.ARunnerPlugin" alias="therunnerplugin"/>
 

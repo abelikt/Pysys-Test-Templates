@@ -42,7 +42,10 @@
 		<default-file-encoding pattern="*.json" encoding="utf-8"/>
 		<default-file-encoding pattern="*.yaml" encoding="utf-8"/>
 	</default-file-encodings>	
-	
+
+    <!-- Add another base runner -->
+    <runner classname="myorg.myrunner.MyRunner"/>
+
 	<!-- Add project-specific text to be appended to the "pysys run -h". -->
 	<project-help>
 	</project-help>

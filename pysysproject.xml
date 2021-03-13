@@ -16,7 +16,9 @@
 	<test-plugin   classname="myorg.plugins.MyTestPlugin" alias="myorg"/>
 	<runner-plugin classname="myorg.plugins.MyRunnerPlugin" alias="myorg"/>
 	-->
-	
+	<pythonpath value="./pysys-extensions" />
+   	<runner-plugin classname="myorg.arunnerplugin.ARunnerPlugin" alias="myorgx"/>
+
 	<writers>
 		<writer classname="pysys.writer.testoutput.TestOutputArchiveWriter">
 			<property name="destDir" value="__pysys_output_archives/"/>

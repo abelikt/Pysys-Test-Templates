@@ -6,7 +6,7 @@ from pysys.basetest import BaseTest
 class PySysTest(BaseTest):
     def setup(self):
         self.log.info("Setup")
-        self.addCleanupFunction(self.cleanup)
+        self.addCleanupFunction(self.mycleanup)
 
     def execute(self):
         self.log.info("Execute")
@@ -17,5 +17,5 @@ class PySysTest(BaseTest):
         self.log.info("Validate")
         self.addOutcome(PASSED)
 
-    def cleanup(self):
+    def mycleanup(self):
         self.log.info("Cleanup")

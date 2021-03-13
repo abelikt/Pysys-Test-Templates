@@ -7,15 +7,20 @@ import pysys
 
 
 class ARunnerPlugin(object):
-    """
-    This is a sample PySys runner plugin.
-    """
-
     def setup(self, runner):
         self.owner = self.runner = runner
-        self.log = logging.getLogger("pysys.Plugins.ARunnerPlugin")
+        self.log = logging.getLogger("pysys.myorg.ARunnerPlugin")
+        self.log.info("Setup Plugin ARunnerPlugin up and doing stuff")
+        self.owner.mkdir(self.owner.output)
+        runner.addCleanupFunction(self.__myPluginCleanup)
 
-        # During the runner setup phase (before any tests being) is a good time to add metadata about the test run,
-        # such as which version of our application we're testing with.
-        # runner.runDetails['myServerBuildNumber'] = pysys.utils.fileutils.loadProperties(
-        # 	runner.project.appHome+'/build.properties')['buildNumber']
+    def getPythonVersion(self):
+        self.owner.startProcess(
+            sys.executable, arguments=["--version"], stdouterr="ARunnerPlugin"
+        )
+        return self.owner.waitForGrep("ARunnerPlugin.out", "(?P<output>.+)")[
+            "output"
+        ].strip()
+
+    def __myPluginCleanup(self):
+        self.log.info("MyRunnerPlugin cleanup called")

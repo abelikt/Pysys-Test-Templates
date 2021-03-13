@@ -17,7 +17,7 @@
 	<runner-plugin classname="myorg.plugins.MyRunnerPlugin" alias="myorg"/>
 	-->
 	<pythonpath value="./pysys-extensions" />
-   	<runner-plugin classname="myorg.arunnerplugin.ARunnerPlugin" alias="myorgx"/>
+   	<runner-plugin classname="myorg.arunnerplugin.ARunnerPlugin" alias="therunnerplugin"/>
 
 	<writers>
 		<writer classname="pysys.writer.testoutput.TestOutputArchiveWriter">

@@ -10,6 +10,8 @@ class PySysTest(BaseTest):
 
     def execute(self):
         self.log.info("Execute")
+        v = self.runner.therunnerplugin.getPythonVersion()
+        self.log.info(v)
 
     def validate(self):
         self.log.info("Validate")

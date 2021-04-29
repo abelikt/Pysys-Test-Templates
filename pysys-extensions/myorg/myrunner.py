@@ -4,6 +4,8 @@ import logging
 import pysys
 import pysys.baserunner
 
+# Some parts are taken from the PySys sample cookbook
+# https://github.com/pysys-test/sample-cookbook
 
 class MyRunner(pysys.baserunner.BaseRunner):
     """

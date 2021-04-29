@@ -5,6 +5,9 @@ import logging
 
 import pysys
 
+# Some parts are taken from the PySys sample cookbook
+# https://github.com/pysys-test/sample-cookbook
+
 
 class ARunnerPlugin(object):
     def setup(self, runner):

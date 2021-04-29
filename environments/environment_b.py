@@ -6,7 +6,7 @@ class EnvironmentB(BaseTest):
 
     def setup(self):
         self.log.info("EnvironmentB Setup")
-        self.addCleanupFunction(self.mycleanup)
+        self.addCleanupFunction(self.mycleanup_env_b)
 
     def execute(self):
         self.log.info("EnvironmentB Execute")
@@ -15,6 +15,6 @@ class EnvironmentB(BaseTest):
         self.log.info("EnvironmentB Validate")
         self.addOutcome(PASSED)
 
-    def mycleanup(self):
+    def mycleanup_env_b(self):
         self.log.info("EnvironmentB Cleanup")
 

@@ -14,18 +14,17 @@ class PySysTest(EnvironmentB):
 
     def setup(self):
         super().setup()
-        self.log.info("Setup")
+        self.log.info("Setup Test")
         self.addCleanupFunction(self.mycleanup)
 
     def execute(self):
         super().execute()
-        self.log.info("Execute")
+        self.log.info("Execute Test")
 
     def validate(self):
         super().validate()
-        self.log.info("Validate")
+        self.log.info("Validate Test")
         self.addOutcome(PASSED)
 
     def mycleanup(self):
-        super().mycleanup()
-        self.log.info("Cleanup")
+        self.log.info("Cleanup Test")

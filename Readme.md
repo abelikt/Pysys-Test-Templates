@@ -6,7 +6,11 @@ pysys tests. The goal is to have a simple demo for every pysys feature.
 
 ## Links
 
-- PySys
+- PySys Projects
+
+    https://github.com/pysys-test/
+
+- PySys Framework
 
     https://github.com/pysys-test/pysys-test
 
@@ -17,5 +21,6 @@ pysys tests. The goal is to have a simple demo for every pysys feature.
 
 ## Run stuff
 
-pysys.py run -v DEBUG 007_AnotherProcess/
+    pysys.py run -v DEBUG <test_name>
+
 

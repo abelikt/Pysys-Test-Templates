@@ -21,6 +21,11 @@ pysys tests. The goal is to have a simple demo for every pysys feature.
 
 ## Run stuff
 
+
+    pysys.py run
+
+    pysys.py run -v DEBUG
+
     pysys.py run -v DEBUG <test_name>
 
 

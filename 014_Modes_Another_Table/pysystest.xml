@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pysystest type="auto">
+  
+  <description> 
+    <title></title>    
+    <purpose><![CDATA[
+]]>
+    </purpose>
+  </description>
+
+  <!-- uncomment this to skip the test:  
+  <skipped reason=""/> 
+  -->
+
+  <classification>
+    <groups inherit="true">
+      <group></group>
+    </groups>
+    <modes inherit="true">
+        <mode>Apple_Banana_Orange_Berry</mode>
+        <mode>Test</mode>
+        <mode> Test</mode>
+        <mode>Test </mode>
+        <mode> Test </mode>
+        <mode> </mode> <!-- This one is ignored !!! -->
+        <mode> abcdef___.....__asdf </mode>
+        <mode> _abcdef___.....__asdf </mode>
+        <mode> abcdef___.....__asdf_ </mode>
+        <mode> . </mode>
+        <mode> _ </mode>
+
+    </modes>
+  </classification>
+
+  <data>
+    <class name="PySysTest" module="run"/>
+  </data>
+  
+  <traceability>
+    <requirements>
+      <requirement id=""/>     
+    </requirements>
+  </traceability>
+</pysystest>

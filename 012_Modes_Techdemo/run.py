@@ -5,6 +5,8 @@ from pysys.basetest import BaseTest
 # See
 # https://pysys-test.github.io/pysys-test/UserGuide.html#running-tests-in-multiple-modes
 
+# run
+#  pysys.py run -v DEBUG --mode ALL
 
 # Code intended for a Plugin:
 #class MyTestPlugin(object):
@@ -49,10 +51,6 @@ class PySysTest(BaseTest):
         db = dbHelperFactory()
 
         self.log.info(db)
-
-
-
-
 
     def execute(self):
         self.log.info("Execute")

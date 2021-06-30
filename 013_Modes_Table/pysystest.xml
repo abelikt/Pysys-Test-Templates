@@ -17,8 +17,15 @@
 	  <group></group>
 	</groups>
 	<modes inherit="true">
-		<mode>MockDatabase_Firefox</mode>
-		<mode>MyDatabase2.0_Chrome</mode>
+		<mode>Apple_Banana_Orange_Berry</mode>
+		<mode>Apple_Banana_Orange_Lemon</mode>
+		<mode>Apple_Banana_Mint_Berry</mode>
+		<mode>Apple_Banana_Mint_Lemon</mode>
+		<mode>Cat_Dog_Horse_Mastodon</mode>
+		<mode>Cat_Dog_Horse_Mastodon</mode>
+		<mode>Cat_Dog_Horse_Mastodon</mode>
+		<mode>Cat_Dog_Horse_Mastodon</mode>
+		<mode>Cat_Dog_Horse_Mastodon</mode>
 	</modes>
   </classification>
 
